@@ -40,6 +40,8 @@ const name1 = document.getElementById('player1');
 const player2 = Player('Player 2', 'X');
 const name2 = document.getElementById('player2');
 
+const winner = document.getElementById('winner');
+
 const board = Board();
 
 let currentPlayer = player1;
@@ -56,6 +58,17 @@ function switchPlayer() {
   }
 }
 
+function displayWinner() {
+  const empties = document.getElementsByClassName('empty');
+
+  while (empties.length) {
+    empties[0].classList.remove('empty');
+  }
+
+  winner.style.display = 'block';
+  winner.innerHTML = `Winner<br />${currentPlayer.name}`;
+}
+
 function game(element, index) {
   if (element.classList.contains('empty')) {
     element.classList.remove('empty');
@@ -64,7 +77,7 @@ function game(element, index) {
     board.setChoice(index, currentPlayer.mark);
 
     if (board.checkWinner()) {
-      winner();
+      displayWinner();
     } else {
       switchPlayer();
     }

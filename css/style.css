@@ -171,11 +171,11 @@ table {
 }
 
 .square {
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
   height: 10rem;
   width: 10rem;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .empty:hover {
@@ -188,4 +188,17 @@ table {
 
 .right {
   border-right: 0.2rem solid black;
+}
+
+#winner {
+  color: #a9a9a9;
+  display: none;
+  font-family: 'VT323', monospace;
+  font-size: 10rem;
+  font-weight: 900;
+  left: 20rem;
+  letter-spacing: 1rem;
+  position: absolute;
+  text-align: center;
+  top: 10rem;
 }
