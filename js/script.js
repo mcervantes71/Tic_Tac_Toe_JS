@@ -10,28 +10,28 @@ const Board = () => {
   const checkWinner = () => {
     let res = false;
 
-    if (square[0] === square[1] === square[2]) {
+    if (square[0] === square[1] && square[1] === square[2]) {
       res = true;
-    } else if (square[3] === square[4] === square[5]) {
+    } else if (square[3] === square[4] && square[4] === square[5]) {
       res = true;
-    } else if (square[6] === square[7] === square[8]) {
+    } else if (square[6] === square[7] && square[7] === square[8]) {
       res = true;
-    } else if (square[0] === square[3] === square[6]) {
+    } else if (square[0] === square[3] && square[3] === square[6]) {
       res = true;
-    } else if (square[1] === square[4] === square[7]) {
+    } else if (square[1] === square[4] && square[4] === square[7]) {
       res = true;
-    } else if (square[2] === square[5] === square[8]) {
+    } else if (square[2] === square[5] && square[5] === square[8]) {
       res = true;
-    } else if (square[0] === square[4] === square[8]) {
+    } else if (square[0] === square[4] && square[4] === square[8]) {
       res = true;
-    } else if (square[2] === square[4] === square[6]) {
+    } else if (square[2] === square[4] && square[4] === square[6]) {
       res = true;
     }
 
     return res;
   };
 
-  return { square };
+  return { square, setChoice, checkWinner };
 };
 
 const player1 = Player('Player 1', 'O');
@@ -60,6 +60,14 @@ function game(element, index) {
   if (element.classList.contains('empty')) {
     element.classList.remove('empty');
     element.style.backgroundImage = `url(../img/${currentPlayer.mark}.png)`;
+
+    board.setChoice(index, currentPlayer.mark);
+
+    if (board.checkWinner()) {
+      winner();
+    } else {
+      switchPlayer();
+    }
   }
 }
 
