@@ -4,11 +4,7 @@ const Board = () => {
   const square = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
   const setChoice = (index, mark) => {
-    if (square[index] !== 'O' && square[index] !== 'X') {
-      square[index] = mark;
-      return true;
-    }
-    return false;
+    if (square[index] !== 'O' && square[index] !== 'X') square[index] = mark;
   };
 
   const checkWinner = () => {
@@ -59,3 +55,15 @@ function switchPlayer() {
     name2.classList.remove('current_player');
   }
 }
+
+function game(element, index) {
+  if (element.classList.contains('empty')) {
+    element.classList.remove('empty');
+    element.style.backgroundImage = `url(../img/${currentPlayer.mark}.png)`;
+  }
+}
+
+/* testing */
+
+const test = 0;
+if (test === 1) game();
