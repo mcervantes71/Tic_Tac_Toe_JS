@@ -39,5 +39,23 @@ const Board = () => {
 };
 
 const player1 = Player('Player 1', 'O');
+const name1 = document.getElementById('player1');
 
 const player2 = Player('Player 2', 'X');
+const name2 = document.getElementById('player2');
+
+const board = Board();
+
+let currentPlayer = player1;
+
+function switchPlayer() {
+  if (currentPlayer === player1) {
+    currentPlayer = player2;
+    name1.classList.remove('current_player');
+    name2.classList.add('current_player');
+  } else {
+    currentPlayer = player1;
+    name1.classList.add('current_player');
+    name2.classList.remove('current_player');
+  }
+}

@@ -153,7 +153,13 @@ table {
 .names {
   font-size: 1.5rem;
   font-weight: 900;
+  padding: 1rem 2rem;
   margin: 0 2rem;
+}
+
+.current_player {
+  background-color: blue;
+  color: #fff;
 }
 
 .align {
@@ -170,7 +176,7 @@ table {
   width: 10rem;
 }
 
-.square:hover {
+.empty:hover {
   background-color: #ed553b;
 }
 
