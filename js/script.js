@@ -3,6 +3,12 @@ const Player = (name, mark) => ({ name, mark });
 const Board = () => {
   const square = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
+  const reset = () => {
+    for (let i = 0; i < square.length; i += 1) {
+      square[i] = i;
+    }
+  };
+
   const setChoice = (index, mark) => {
     if (square[index] !== 'O' && square[index] !== 'X') square[index] = mark;
   };
@@ -31,7 +37,9 @@ const Board = () => {
     return res;
   };
 
-  return { square, setChoice, checkWinner };
+  return {
+    square, reset, setChoice, checkWinner,
+  };
 };
 
 const player1 = Player('Player 1', 'O');
@@ -84,7 +92,25 @@ function game(element, index) {
   }
 }
 
+function reset() {
+  const squares = document.getElementsByClassName('square');
+
+  for (let i = 0; i < squares.length; i += 1) {
+    squares[i].classList.add('empty');
+    squares[i].style.backgroundImage = '';
+  }
+
+  winner.style.display = 'none';
+
+  currentPlayer = player1;
+  name1.classList.add('current_player');
+  name2.classList.remove('current_player');
+
+  board.reset();
+}
+
 /* testing */
 
 const test = 0;
 if (test === 1) game();
+reset();

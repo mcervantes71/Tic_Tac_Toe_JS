@@ -10,7 +10,7 @@
         <link href='img/icon.ico' rel='icon' type='image/x-icon'>
 
         <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css2?family=VT323&display=swap' rel='stylesheet'>
         <link href='css/style.css' rel='stylesheet' type='text/css' >
     </head>
     <body>
@@ -20,9 +20,9 @@
             <tbody>
                 <tr>
                     <td class='align'><div id='player1' class='names current_player'>Player 1</div></td>
-                    <td><div id='1' class='square bottom right empty' onclick="game(this,0)"></div></td>
-                    <td><div id='2' class='square bottom right empty' onclick="game(this,1)"></div></td>
-                    <td><div id='3' class='square bottom empty' onclick="game(this,2)"></div></td>
+                    <td><div id='1' class='square bottom right empty' onclick='game(this,0)'></div></td>
+                    <td><div id='2' class='square bottom right empty' onclick='game(this,1)'></div></td>
+                    <td><div id='3' class='square bottom empty' onclick='game(this,2)'></div></td>
                     <td class='align'><div id='player2' class='names'>Player 2</div></td>
                 </tr>
 
@@ -39,12 +39,12 @@
                     <td><div id='7' class='square right empty' onclick='game(this,6)'></div></td>
                     <td><div id='8' class='square right empty' onclick='game(this,7)'></div></td>
                     <td><div id='9' class='square empty' onclick='game(this,8)'></div></td>
-                    <td></td>
+                    <td class='align'><button id='reset' onclick='reset()'>Reset</button></td>
                 </tr>
             </tbody>
         </table>
 
-        <div id="winner">Winner<br />Player 1</div>
+        <div id='winner'>Winner<br />Player 1</div>
 
         <script src='js/script.js'></script>
     </body>
