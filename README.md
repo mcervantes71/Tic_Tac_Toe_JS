@@ -1,6 +1,6 @@
 # Tic Tac Toe JS
 
-This is a simple project
+In this project a Tic Tac Toe game was created (again) but this time it will be shown in the browser. Without backend. In this project the main objective is to put into practice the factory functions and the pattern of the module together with the main concepts of object oriented programming. In particular, classes/objects and how to access their methods and attributes.
 
 ![screenshot](./Screenshot.png)
 
@@ -12,7 +12,7 @@ This is a simple project
 
 ## :mag: Live Demo
 
-[Live Demo Link](https://index.html)
+[Live Demo Link](https://rawcdn.githack.com/mcervantes71/Tic_Tac_Toe_JS/feature/build_app/index.html)
 
 ## :computer: Getting Started
 

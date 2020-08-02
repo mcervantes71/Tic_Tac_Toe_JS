@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  color: #00f;
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0 auto;
+  width: 80%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+q::after,
+q::before,
+blockquote::after,
+blockquote::before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* tic tac toe */
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  padding: 0 0 2rem;
+  text-align: center;
+  text-decoration: underline #ed553b;
+}
+
+.names {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1rem 2rem;
+  margin: 0 2rem;
+}
+
+.current_player {
+  background-color: #00f;
+  color: #fff;
+}
+
+.align {
+  vertical-align: middle;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.square {
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 10rem;
+  width: 10rem;
+}
+
+.empty:hover {
+  background-color: #ed553b;
+}
+
+.bottom {
+  border-bottom: 0.2rem solid black;
+}
+
+.right {
+  border-right: 0.2rem solid black;
+}
+
+#winner {
+  color: #a9a9a9;
+  display: none;
+  font-family: 'VT323', monospace;
+  font-size: 10rem;
+  font-weight: 900;
+  left: 20rem;
+  letter-spacing: 1rem;
+  position: absolute;
+  text-align: center;
+  top: 10rem;
+}
+
+#reset {
+  font-size: 1.3rem;
+  font-weight: 900;
+  padding: 0.8rem 1.5rem;
+  margin: 0 4rem;
+  background-color: #00f;
+  color: #fff;
+  box-shadow: 0.2rem 0.2rem gray;
+}
+
+#reset:hover {
+  background-color: #21729f;
+}
+
+#reset:active {
+  background-color: #00f;
+  box-shadow: 0 0 0.2rem 0.2rem gray;
+}

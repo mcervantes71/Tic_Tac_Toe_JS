@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+        <title>Tic Tac Toe JS</title>
+
+        <link href='img/icon.ico' rel='icon' type='image/x-icon'>
+
+        <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css2?family=VT323&display=swap' rel='stylesheet'>
+        <link href='css/style.css' rel='stylesheet' type='text/css' >
+    </head>
+    <body>
+        <h1 class='title'>Tic Tac Toe JS</h1>
+
+        <table class='center'>
+            <tbody>
+                <tr>
+                    <td class='align'><div id='player1' class='names current_player'>Player 1</div></td>
+                    <td><div id='1' class='square bottom right empty' onclick='game(this,0)'></div></td>
+                    <td><div id='2' class='square bottom right empty' onclick='game(this,1)'></div></td>
+                    <td><div id='3' class='square bottom empty' onclick='game(this,2)'></div></td>
+                    <td class='align'><div id='player2' class='names'>Player 2</div></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><div id='4' class='square bottom right empty' onclick='game(this,3)'></div></td>
+                    <td><div id='5' class='square bottom right empty' onclick='game(this,4)'></div></td>
+                    <td><div id='6' class='square bottom empty' onclick='game(this,5)'></div></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><div id='7' class='square right empty' onclick='game(this,6)'></div></td>
+                    <td><div id='8' class='square right empty' onclick='game(this,7)'></div></td>
+                    <td><div id='9' class='square empty' onclick='game(this,8)'></div></td>
+                    <td class='align'><button id='reset' onclick='reset()'>Reset</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id='winner'>Winner<br />Player 1</div>
+
+        <script src='js/script.js'></script>
+    </body>
+</html>
