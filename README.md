@@ -12,7 +12,7 @@ In this project a Tic Tac Toe game was created (again) but this time it will be 
 
 ## :mag: Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/mcervantes71/Tic_Tac_Toe_JS/feature/build_app/index.html)
+[Live Demo Link](https://mcervantes71.github.io/Tic_Tac_Toe_JS/index.html)
 
 ## :computer: Getting Started
 
@@ -44,7 +44,6 @@ In any browser, open the index.html file.
 - Linkedin: [Martin Cervantes](https://www.linkedin.com/in/cervantesmartin/)
 - Twitter: [@M4rt1nC3rv4nt3s](https://twitter.com/M4rt1nC3rv4nt3s)
 - Github: [@mcervantes71](https://github.com/mcervantes71)
-- Gmail: [cervantes.martine](mailto:cervantes.martine@gmail.com)
 
 ## 🤝 Contributing
 
