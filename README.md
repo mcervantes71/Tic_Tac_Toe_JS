@@ -44,6 +44,7 @@ In any browser, open the index.html file.
 - Linkedin: [Martin Cervantes](https://www.linkedin.com/in/cervantesmartin/)
 - Twitter: [@M4rt1nC3rv4nt3s](https://twitter.com/M4rt1nC3rv4nt3s)
 - Github: [@mcervantes71](https://github.com/mcervantes71)
+- Gmail: [cervantes.martine](mailto:cervantes.martine@gmail.com)
 
 ## 🤝 Contributing
 
