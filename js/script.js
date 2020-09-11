@@ -54,7 +54,7 @@ const board = Board();
 
 let currentPlayer = player1;
 
-function switchPlayer() {
+const switchPlayer = () => {
   if (currentPlayer === player1) {
     currentPlayer = player2;
     name1.classList.remove('current_player');
@@ -64,9 +64,11 @@ function switchPlayer() {
     name1.classList.add('current_player');
     name2.classList.remove('current_player');
   }
-}
+};
 
-function displayWinner() {
+module.export = switchPlayer;
+
+const displayWinner = () => {
   const empties = document.getElementsByClassName('empty');
 
   while (empties.length) {
@@ -75,9 +77,9 @@ function displayWinner() {
 
   winner.style.display = 'block';
   winner.innerHTML = `Winner<br />${currentPlayer.name}`;
-}
+};
 
-function game(element, index) {
+const game = (element, index) => {
   if (element.classList.contains('empty')) {
     element.classList.remove('empty');
     element.style.backgroundImage = `url(../img/${currentPlayer.mark}.png)`;
@@ -90,9 +92,9 @@ function game(element, index) {
       switchPlayer();
     }
   }
-}
+};
 
-function reset() {
+const reset = () => {
   const squares = document.getElementsByClassName('square');
 
   for (let i = 0; i < squares.length; i += 1) {
@@ -107,7 +109,7 @@ function reset() {
   name2.classList.remove('current_player');
 
   board.reset();
-}
+};
 
 /* testing */
 
