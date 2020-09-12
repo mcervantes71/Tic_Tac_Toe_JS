@@ -2,24 +2,32 @@
   "name": "tic_tac_toe_js",
   "version": "1.0.0",
   "description": "In this project a Tic Tac Toe game was created (again) but this time it will be shown in the browser. Without backend. In this project the main objective is to put into practice the factory functions and the pattern of the module together with the main concepts of object oriented programming. In particular, classes/objects and how to access their methods and attributes.",
-  "main": "index.html",
+  "private": true,
   "directories": {
     "test": "test"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/preset-env": "^7.11.0",
+    "css-loader": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "jest": "^26.4.0",
+    "style-loader": "^1.2.1",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.8.0",
-    "stylelint-scss": "^3.17.2"
+    "stylelint-scss": "^3.17.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "test": "jest"
+    "bundle": "webpack",
+    "watch":  "webpack --watch",
+    "start":  "webpack-dev-server --watch --open",
+    "test":   "jest"
   },
   "repository": {
     "type": "git",
