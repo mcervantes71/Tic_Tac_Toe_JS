@@ -16,7 +16,6 @@ const init = () => {
 
   const div1 = document.createElement('div');
   div1.classList.add('names', 'current_player');
-  div1.innerText = 'Player 1';
   div1.id = 'player1';
 
   td1.appendChild(div1);
@@ -26,8 +25,7 @@ const init = () => {
 
   const div2 = document.createElement('div');
   div2.classList.add('square', 'bottom', 'right', 'empty');
-  // div2.onclick = game(this, 0);
-  div2.id = '1';
+  div2.id = '0';
 
   td2.appendChild(div2);
   tr1.appendChild(td2);
@@ -36,8 +34,7 @@ const init = () => {
 
   const div3 = document.createElement('div');
   div3.classList.add('square', 'bottom', 'right', 'empty');
-  // div3.onclick = game(this, 1);
-  div3.id = '2';
+  div3.id = '1';
 
   td3.appendChild(div3);
   tr1.appendChild(td3);
@@ -46,8 +43,7 @@ const init = () => {
 
   const div4 = document.createElement('div');
   div4.classList.add('square', 'bottom', 'empty');
-  // div4.onclick = game(this, 2);
-  div4.id = '3';
+  div4.id = '2';
 
   td4.appendChild(div4);
   tr1.appendChild(td4);
@@ -57,7 +53,6 @@ const init = () => {
 
   const div5 = document.createElement('div');
   div5.classList.add('names');
-  div5.innerText = 'Player 2';
   div5.id = 'player2';
 
   td5.appendChild(div5);
@@ -75,8 +70,7 @@ const init = () => {
 
   const div7 = document.createElement('div');
   div7.classList.add('square', 'bottom', 'right', 'empty');
-  // div7.onclick = game(this, 3);
-  div7.id = '4';
+  div7.id = '3';
 
   td7.appendChild(div7);
   tr2.appendChild(td7);
@@ -85,8 +79,7 @@ const init = () => {
 
   const div8 = document.createElement('div');
   div8.classList.add('square', 'bottom', 'right', 'empty');
-  // div8.onclick = game(this, 4);
-  div8.id = '5';
+  div8.id = '4';
 
   td8.appendChild(div8);
   tr2.appendChild(td8);
@@ -95,8 +88,7 @@ const init = () => {
 
   const div9 = document.createElement('div');
   div9.classList.add('square', 'bottom', 'empty');
-  // div9.onclick = game(this, 5);
-  div9.id = '6';
+  div9.id = '5';
 
   td9.appendChild(div9);
   tr2.appendChild(td9);
@@ -117,8 +109,7 @@ const init = () => {
 
   const div12 = document.createElement('div');
   div12.classList.add('square', 'right', 'empty');
-  // div12.onclick = game(this, 6);
-  div12.id = '7';
+  div12.id = '6';
 
   td12.appendChild(div12);
   tr3.appendChild(td12);
@@ -127,8 +118,7 @@ const init = () => {
 
   const div13 = document.createElement('div');
   div13.classList.add('square', 'right', 'empty');
-  // div13.onclick = game(this, 7);
-  div13.id = '8';
+  div13.id = '7';
 
   td13.appendChild(div13);
   tr3.appendChild(td13);
@@ -137,8 +127,7 @@ const init = () => {
 
   const div14 = document.createElement('div');
   div14.classList.add('square', 'empty');
-  // div14.onclick = game(this, 8);
-  div14.id = '9';
+  div14.id = '8';
 
   td14.appendChild(div14);
   tr3.appendChild(td14);
@@ -148,7 +137,6 @@ const init = () => {
 
   const button = document.createElement('button');
   button.innerText = 'Reset';
-  // button.onclick = reset();
   button.id = 'reset';
 
   td15.appendChild(button);
@@ -164,5 +152,6 @@ const init = () => {
 
   body.appendChild(container);
 };
+
 
 export default init;
