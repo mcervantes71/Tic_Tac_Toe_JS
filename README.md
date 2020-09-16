@@ -35,7 +35,35 @@ To get a local copy up and running follow these simple steps.
 
 ### Usage
 
-In any browser, open the index.html file.
+Install the dependencies in the local node_modules folder
+
+```sh
+  $ npm install
+```
+
+Bundle JavaScript files for usage in a browser
+
+```sh
+  $ npm run bundle
+```
+
+Calling the watch method triggers the webpack runner, but then watches for changes
+
+```sh
+  $ npm run watch
+```
+
+Use webpack with a development server that provides live reloading. This should be used for development only.
+
+```sh
+  $ npm start
+```
+
+### Testing
+
+```sh
+  $ npm run test
+```
 
 ## :busts_in_silhouette: Authors
 
@@ -44,6 +72,7 @@ In any browser, open the index.html file.
 - Linkedin: [Martin Cervantes](https://www.linkedin.com/in/cervantesmartin/)
 - Twitter: [@M4rt1nC3rv4nt3s](https://twitter.com/M4rt1nC3rv4nt3s)
 - Github: [@mcervantes71](https://github.com/mcervantes71)
+- Gmail: [cervantes.martine](mailto:cervantes.martine@gmail.com)
 
 ## 🤝 Contributing
 
