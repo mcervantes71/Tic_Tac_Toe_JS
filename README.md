@@ -12,7 +12,7 @@ In this project a Tic Tac Toe game was created (again) but this time it will be 
 
 ## :mag: Live Demo
 
-[Live Demo Link](https://mcervantes71.github.io/Tic_Tac_Toe_JS/index.html)
+[Live Demo Link](https://mcervantes71.github.io/Tic_Tac_Toe_JS/dist/index.html)
 
 ## :computer: Getting Started
 
